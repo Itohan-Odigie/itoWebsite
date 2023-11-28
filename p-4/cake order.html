@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- always include lang -->
+<!-- this web app allows one to fianlly choose and buy their dream cake-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Cake Order </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome cdn (to use icons import dis shit) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>   
+        <div class = "food-wrapper center">
+            <h1 id="h1"> Cake order card</h1>
+            <h6 id="h6">  Pick a cake order card, and order your dream birthday cake NOW! </h6>
+            <div class = "foods">
+                <!-- single food 1-->
+                <div class = "food">
+                    <div class = "food-img">
+                        <img src = "https://i.pinimg.com/236x/04/31/2a/04312a2f6f3fcdfb7516a9bf1ddcc657.jpg" alt = "food image">
+                        <span>
+                            <i class = "far fa-heart"></i>
+                        </span>
+                        <h3 class = "food-rate">$ 8.99</h3>
+                    </div>
+
+                    <div class = "food-content">
+                        <h2>Vanilla Cake</h2>
+                        <p> Vanilla Cake with Cream. Icing Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus unde aliquam cupiditate. 
+                    
+                        </p>
+                        <div class = "food-info">
+                            <div>
+                                <a href="/p-4/action.html" target="_blank"> <i class="fa fa-birthday-cake"></i> </a>
+                                    <p>215 - 315 Kcal</p>
+                            </div>
+                            <span class="buying">
+                                <a href="#buy" id="paying"> Purchase <i class='fas fa-shopping-basket'></i></i></a>
+                            </span> <!-- we r using span b/c spans take up as much space as dey need -->
+                        </div>
+
+                        <div class = "food-price-calc">
+                            <h2 class = "food-total"></h2>
+                            <div class = "food-quantity">
+                                <div class = "order-dec center">
+                                    <i class = "fas fa-minus"></i>
+                                </div>
+                                <div class = "order-val center">0</div>
+                                <div class = "order-inc center">
+                                    <i class = "fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single food 1 -->
+
+                <!-- single food 2-->
+                <div class = "food">
+                    <div class = "food-img">
+                        <img src = "https://i.pinimg.com/236x/38/11/f1/3811f183b594f02f368ba3e67e764508.jpg" alt = "food image">
+                        <span>
+                            <i class = "far fa-heart"></i>
+                        </span>
+                        <h3 class = "food-rate">$ 7.99</h3>
+                    </div>
+
+                    <div class = "food-content">
+                        <h2>Yellow Butter Cake</h2>
+                        <p> Yellow Butter Cake with Purple Icing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus unde aliquam cupiditate.</p>
+                        <div class = "food-info">
+                            <div>
+                                <a href="/p-4/action.html" target="_blank"> <i class="fa fa-birthday-cake"></i> </a>
+                                <p>200 - 287 Kcal</p>
+                            </div>
+                            <span class="buying">
+                                <a href="#buy" id="paying"> Purchase <i class='fas fa-shopping-basket'></i></i></a>
+                            </span>
+                        </div>
+
+                        <div class = "food-price-calc">
+                            <h2 class = "food-total"></h2>
+                            <div class = "food-quantity">
+                                <div class = "order-dec center">
+                                    <i class = "fas fa-minus"></i>
+                                </div>
+                                <div class = "order-val center">0</div>
+                                <div class = "order-inc center">
+                                    <i class = "fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end single food 2-->
+
+                <!-- single food 3 -->
+                <div class = "food">
+                    <div class = "food-img">
+                        <img src = "https://i.pinimg.com/236x/5e/aa/58/5eaa584b40e36d67b968a55d0da802aa.jpg" alt = "food image">
+                        <span>
+                            <i class = "far fa-heart"></i>
+                        </span>
+                        <h3 class = "food-rate">$ 5.50</h3>
+                    </div>
+
+                    <div class = "food-content">
+                        <h2>Red Velvet Cake</h2>
+                        <p>Red Velvet Cake with Pink Icing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus unde aliquam cupiditate.</p>
+                        <div class = "food-info">
+                            <div>
+                                <a href="/p-4/action.html" target="_blank"> <i class="fa fa-birthday-cake"></i> </a>
+                                <p>250 - 290 Kcal</p>
+                            </div>
+                            <span class="buying">
+                                <a href="#buy" id="paying"> Purchase <i class='fas fa-shopping-basket'></i></i></a>
+                            </span>
+                        </div>
+
+                        <div class = "food-price-calc">
+                            <h2 class = "food-total"></h2>
+                            <div class = "food-quantity">
+                                <div class = "order-dec center">
+                                    <i class = "fas fa-minus"></i>
+                                </div>
+                                <div class = "order-val center">0</div>
+                                <div class = "order-inc center">
+                                    <i class = "fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single food 3 -->
+
+                <!-- single food 4 -->
+                <div class = "food">
+                    <div class = "food-img">
+                        <img src = "https://i.pinimg.com/236x/dd/82/49/dd8249d807c9488e3eccea13a6a77719.jpg" alt = "food image">
+                        <span>
+                            <i class = "far fa-heart"></i>
+                        </span>
+                        <h3 class = "food-rate">$ 6.75</h3>
+                    </div>
+
+                    <div class = "food-content">
+                        <h2>Sponge Cake</h2>
+                        <p> Sponge Cake with Vanilla Icing. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus unde aliquam cupiditate.</p>
+                        <div class = "food-info">
+                            <div>
+                                <a href="/p-4/action.html" target="_blank"> <i class="fa fa-birthday-cake"></i> </a>
+                                <p>200 - 300 Kcal</p>
+                            </div>
+                            <span class="buying">
+                                <a href="#buy" id="paying"> Purchase <i class='fas fa-shopping-basket'></i></i></a>
+                            </span>
+                        </div>
+
+                        <div class = "food-price-calc">
+                            <h2 class = "food-total"></h2>
+                            <div class = "food-quantity">
+                                <div class = "order-dec center">
+                                    <i class = "fas fa-minus"></i>
+                                </div>
+                                <div class = "order-val center">0</div>
+                                <div class = "order-inc center">
+                                    <i class = "fas fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of single food 4 -->
+            </div>
+        </div>
+
+        <!-- purchase -->
+        <a href="/p-4/sign.html" target="_blank"> <input type="submit" value="Purchase" id="buy"> </a>
+    
+        <!-- social media CAN USE FOR FUTURE REFRENCES-->
+        <div class="socials">
+            <ul class="nav-list">
+                <li>
+                  <a href="#" class="icon-link">
+                    <i class="fab fa-facebook-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="icon-link">
+                    <i class="fab fa-twitter-square"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+        </div>
+
+
+
+        <!-- footer -->
+        <footer class="copyright">
+            <p id="ppg">&copy; 2021 Itohan Odigie</p>
+          </footer>
+          
+
+        <script src="script.js"></script>
+    </body>
+</html>

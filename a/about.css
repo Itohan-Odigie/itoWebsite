@@ -1,0 +1,262 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+
+  body{
+    background:  #6FB3B8;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+/* custom scroll bar */
+/* ::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #f8f5f5;
+    box-shadow: inset 0 0 5px grey; 
+  border-radius: 13px;
+}
+::-webkit-scrollbar-thumb {
+    background: grey;
+    opacity: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(112, 107, 107);
+} */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* --------------NAVBAR SECTION --------------- */
+
+#navbar {
+    position: fixed;
+    /*making it so my navbar is always up there no matter where you scroll*/
+    top: 0%;
+    /*making it so my navbar is at the top*/
+    width: 100%;
+    /*making it so the navbar goes from one end to the other*/
+    background-size: 100%;
+    /*making it so my background is 100% of the og image*/
+    margin:0%;
+    z-index: 20;
+    background-color: #6FB3B8;
+}
+
+#navbar ul {  
+    margin-left: 1px;
+    list-style-type: none; 
+    text-align: center; 
+} 
+
+#navbar ul li {
+    float:right;
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px; /*puts space in between the words */
+    padding-top: 20px;
+    /* top right bottom left */
+    
+} 
+ 
+#navbar ul li a { 
+    text-decoration: none; 
+    font-size: 25px;
+    color: white; 
+    background-color: transparent; 
+} 
+
+#navbar ul li a:hover   { 
+    border: 3px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 24px;
+    background: none;
+    color: white;
+    transition: all 0.4s ease;
+    box-shadow: rgba(43, 32, 129, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+} 
+
+#navbar a.logo{
+    color: rgba(0, 0, 0, 0);
+    /*making the text invisible bc i only want the logo not text*/
+    background-image: url("images/AscentYTSmall.png");
+    background-size: 100%;
+    /*adjusts the image size so logo will appear*/
+    background-repeat: no-repeat;
+    /*makes it so the logo doesn't repeat*/
+    position: relative;
+    left: 11px;
+    padding: 0px 60px 50px 0px;
+    float: left;
+}
+
+i{
+    margin-right: 8px;
+    /*puts space between the icons and the words in nav bar */
+}
+
+.menu{
+    margin: 0%;
+}
+
+    /* --------- ANIMATION FOR ICONS-------- */
+    #home-logo:hover .fa-home{
+        animation: jump-shaking 1s ease-in infinite;
+    }
+     
+    @keyframes horizontal-shaking {
+        0% { transform: translateX(0) }
+        25% { transform: translateX(10px) }
+        50% { transform: translateX(-2px) }
+        75% { transform: translateX(6px) }
+        100% { transform: translateX(0) }
+    }
+         
+    #file:hover .fa-file-text{
+        animation: jump-shaking 1s ease-in infinite;
+    }
+     
+    @keyframes jump-shaking {
+        0% { transform: translateX(0) }
+        25% { transform: translateY(-4px) }
+        35% { transform: translateY(-4px) rotate(17deg) }
+        55% { transform: translateY(-4px) rotate(-17deg) }
+        65% { transform: translateY(-4px) rotate(17deg) }
+        75% { transform: translateY(-4px) rotate(-17deg) }
+        100% { transform: translateY(0) rotate(0) }
+    }
+         
+    #arrow:hover .fa-arrow-circle-right{
+        animation: moveright 1s ease-in infinite;
+    }
+     
+    @keyframes moveright {
+        0% {transform: translateX(-4px); opacity: 1;}
+        100% {transform: translateX(8px);opacity: 0;}
+    }
+         
+    #pencil:hover .fa-pencil{
+        animation: tilt-shaking 0.25s infinite;
+    }
+     
+    @keyframes tilt-shaking {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(5deg); }
+        50% { transform: rotate(0eg); }
+        75% { transform: rotate(-10deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    #phone:hover .fa-phone{
+        animation: skew-y-shakeing 1s ease-in infinite;
+    }
+       
+    @keyframes skew-y-shakeing{
+        0% { transform: skewY(-15deg); }
+        5% { transform: skewY(15deg); }
+        10% { transform: skewY(-15deg); }
+        15% { transform: skewY(15deg); }
+        20% { transform: skewY(0deg); }
+        100% { transform: skewY(0deg); }
+    }
+
+    
+
+/* about */
+.about{
+    width: 100%;
+    padding: 50px 10px;
+    margin-top: 95px;
+    
+}
+
+.about img{
+    height: auto;
+    width: 460px;
+}
+
+.about-text{
+    width: 550px;
+  font-size: 20px;
+}
+
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h1{
+    color: white;
+    font-size: 60px;
+    text-transform: capitalize;
+}
+/* Typing Text */
+.text-typing h1{
+    width: auto;
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.3s steps(70, end),
+               blink-caret .75s step-end infinite;
+    
+  }
+  @keyframes typing{
+    from {max-width: 0}
+    to {max-width: 100%}
+  }
+  @keyframes blink-caret{
+    from, to {border-color: transparent}
+    50% {border-color: black}
+  }
+  /* buttons */
+  button{
+    margin-top: 28px;
+    background: white;
+    color: #6FB3B8;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+    font-size: 16px;
+  }
+
+  button:hover{
+    background: transparent;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+  }
+
+
+p{
+  margin-top: 15px;
+}

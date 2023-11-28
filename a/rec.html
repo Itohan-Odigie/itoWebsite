@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <title>Recommendations</title>
+  <link rel="stylesheet" href="rec.css">
+  <script src="rec.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <!-- image -->
+      <!-- <div class="logo">
+          <a href="#"> <img src="img/Ascent.png" alt="logo"></a>
+      </div>
+      -->
+      <!-- nav informaion-->
+      <ul class="menu">
+        <li id="phone"><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a></li>
+        <li id="pencil"><a href="review.html"><i class="fa fa-pencil" aria-hidden="true"></i>Review</a></li>
+        <li id="arrow"><a href="rec.html"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Recommendations</a>
+        </li>
+        <li id="file"><a href="about.html"><i class="fa fa-file-text" aria-hidden="true"></i>About</a></li>
+        <li id="home"><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+        <a class="logo" href="home.html">Home</a>
+
+      </ul>
+    </nav>
+  </header>
+  <br>
+
+  <!--TRENDING -->
+  <!--   <h2 class="section-title">Trending</h2>
+
+  <div class="media-scroller with-overscroll snaps-inline snaps--individual">
+    <div class="media-element">
+      <img
+        src="https://media.istockphoto.com/photos/fresh-cakes-picture-id497959594?k=20&m=497959594&s=612x612&w=0&h=Pzq7lXr-_J2p9aNEio4QrV3pquWUr4TIAu3yRMqeV_E="
+        alt="">
+      <center>
+        <p class="title"><b>Balie's Bakery</b></p>
+        <div class="rating">
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+        </div>
+        <br>
+        <div class="btn">
+          <a href="bb.html">
+            <button type="button">Read more</button>
+          </a>
+        </div>
+      </center>
+    </div>
+    <div class="media-element">
+      <img src="https://techcrunch.com/wp-content/uploads/2016/01/a-real-bookstore.jpg" alt="">
+      <center>
+        <p class="title"><b>RavenQuill</b></p>
+        <div class="rating">
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+        </div>
+        <br>
+        <div class="btn">
+          <button type="button">Read More</button>
+        </div>
+      </center>
+    </div>
+    <div class="media-element">
+      <img
+        src="https://media.npr.org/assets/img/2020/05/05/plazamarqueeduringclosure_custom-965476b67c1a760bdb3e16991ce8d65098605f62-s1100-c50.jpeg"
+        alt="">
+      <center>
+        <p class="title"><b>Filmix</b></p>
+        <div class="rating">
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+        </div>
+        <br>
+        <div class="btn">
+          <button type="button">Read More</button>
+        </div>
+      </center>
+    </div>
+    <div class="media-element">
+      <img
+        src="https://img.freepik.com/premium-photo/interior-men-s-clothing-store-style-fashion_120897-3074.jpg?w=2000"
+        alt="">
+      <center>
+        <p class="title"><b>Apparee</b></p>
+        <div class="rating">
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+        </div>
+        <br>
+        <div class="btn">
+          <button type="button">Read More</button>
+        </div>
+      </center>
+    </div>
+    <div class="media-element">
+      <img
+        src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3JvY2VyeSUyMHN0b3JlJTIwYWlzbGV8ZW58MHx8MHx8&w=1000&q=80"
+        alt="">
+      <center>
+        <p class="title"><b>GoTo Grocery</b></p>
+        <div class="rating">
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+        </div>
+        <br>
+        <div class="btn">
+          <button type="button">Read More</button>
+        </div>
+      </center>
+    </div>
+    <div class="media-element">
+      <img src="https://media-cdn.tripadvisor.com/media/photo-s/17/0c/ba/4d/one-of-the-bakery-cases.jpg" alt="">
+      <center>
+        <p class="title"><b>Pastre</b></p>
+        <div class="rating">
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+        </div>
+        <br>
+        <div class="btn">
+          <button type="button">Read More</button>
+        </div>
+      </center>
+    </div>
+    <div class="media-element">
+      <img src="https://866attylaw.com/wp-content/uploads/2020/07/adaptive-clothing-make-life-easier-disabled.jpg"
+        alt="">
+      <center>
+        <p class="title"><b>Outdo</b></p>
+        <div class="rating">
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="far fa-star checked"></i>
+        </div>
+        <br>
+        <div class="btn">
+          <button type="button">Read More</button>
+        </div>
+      </center>
+    </div>
+    <div class="media-element">
+      <img
+        src="https://cdn.vox-cdn.com/thumbor/p3GjD-7suCuZWD7nH6ZUoWACP_g=/0x0:9467x6311/1200x800/filters:focal(3977x2399:5491x3913)/cdn.vox-cdn.com/uploads/chorus_image/image/69323734/Side_Piece_2___Anthony_Mair.0.jpg"
+        alt="">
+      <center>
+        <p class="title"><b>Pizza Maniac</b></p>
+        <div class="rating">
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="far fa-star checked"></i>
+        </div>
+        <br>
+        <div class="btn">
+          <button type="button">Read More</button>
+        </div>
+      </center>
+    </div>
+    <div class="media-element">
+      <img src="https://www.dudleynews.co.uk/resources/images/5550574?type=responsive-gallery-fullscreen" alt="">
+      <center>
+        <p class="title"><b>GYMethod</b></p>
+        <div class="rating">
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="far fa-star checked"></i>
+        </div>
+        <br>
+        <div class="btn">
+          <button type="button">Read More</button>
+        </div>
+      </center>
+    </div>
+    <div class="media-element">
+      <img src="https://manhattanbarbershopnyc.com/wp-content/uploads/2021/10/IMG_0282-scaled.jpg" alt="">
+      <center>
+        <p class="title"><b>Ruben's Hair</b></p>
+        <div class="rating">
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="far fa-star checked"></i>
+        </div>
+        <br>
+        <div class="btn">
+          <button type="button">Read More</button>
+        </div>
+      </center>
+    </div>
+  </div> -->
+
+
+  <!--TRENDING -->
+  <!--   <h2 class="section-title">Top Reviewed</h2>
+
+  <div class="media-scroller with-overscroll snaps-inline snaps--individual">
+    <div class="media-ele">
+      <img src="/images/utensils.png" alt="">
+      <center>
+        <div class="btn">
+          <a href="dining.html">
+            <button type="button">DINING</button>
+          </a>
+        </div>
+      </center>
+    </div>
+    <div class="media-ele">
+      <img src="/images/clothing.png" alt="">
+      <center>
+        <div class="btn">
+          <button type="button">APPAREL</button>
+        </div>
+      </center>
+    </div>
+    <div class="media-ele">
+      <img src="/images/pingpong.png" alt="">
+      <center>
+        <div class="btn">
+          <button type="button">LEISURE</button>
+        </div>
+      </center>
+    </div>
+    <div class="media-ele">
+      <img src="/images/flight.png" alt="">
+      <center>
+        <div class="btn">
+          <button type="button">TRAVEL</button>
+        </div>
+      </center>
+    </div>
+    <div class="media-ele">
+      <img src="/images/checklist.png" alt="">
+      <center>
+        <div class="btn">
+          <button type="button">ESSENTIALS</button>
+        </div>
+      </center>
+    </div>
+    <div class="media-ele">
+      <img src="/images/mirror.png" alt="">
+      <center>
+        <div class="btn">
+          <button type="button">BEAUTY & HEALTH</button>
+        </div>
+      </center>
+    </div>
+    <div class="media-ele">
+      <img src="/images/map.png" alt="">
+      <center>
+        <div class="btn">
+          <button type="button">PUBLIC SPACES</button>
+        </div>
+      </center>
+    </div>
+  </div>
+  <br> -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="bruh">
+    <div class="bxone">
+      <label class="container1 boo1">
+        <input type="checkbox">
+        <span class="checkmarkew">ACCESSIBLE RAMP</span>
+      </label>
+      <br>
+      <label class="container1 boo1">
+        <input type="checkbox">
+        <span class="checkmarkew">ACCESSIBLE STALL</span>
+      </label>
+    </div>
+
+    <div class="bxtwo">
+      <label class="container1 boo2">
+        <input type="checkbox">
+        <span class="checkmarkew">WIDE PATHS</span>
+      </label>
+      <br>
+      <label class="container1 boo2">
+        <input type="checkbox">
+        <span class="checkmarkew">AUTO DOORS</span>
+      </label>
+    </div>
+
+    <div class="bxtree">
+      <label class="container1 boo3">
+        <input type="checkbox">
+        <span class="checkmarkew">ELEVATOR</span>
+      </label>
+      <br>
+      <label class="container1 boo3">
+        <input type="checkbox">
+        <span class="checkmarkew">BRAILLE SIGNS</span>
+      </label>
+    </div>
+
+    <div class="bxfou">
+      <label class="container1 boo3">
+        <input type="checkbox">
+        <span class="checkmarkew">TACTILE PAVING</span>
+      </label>
+      <br>
+      <label class="container1 boo4">
+        <input type="checkbox">
+        <span class="checkmarkew">FLEXIBLE SEATS</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="bro">
+    <label class="container1 boo3">
+      <input type="checkbox">
+      <span class="checkmarkBRO">DINING</span>
+    </label>
+    <label class="container1 boo3">
+      <input type="checkbox">
+      <span class="checkmarkBRO">APPAREL</span>
+    </label>
+    <label class="container1 boo3">
+      <input type="checkbox">
+      <span class="checkmarkBRO">LEISURE</span>
+    </label>
+    <label class="container1 boo3">
+      <input type="checkbox">
+      <span class="checkmarkBRO">TRAVEL</span>
+    </label>
+    <label class="container1 boo3">
+      <input type="checkbox">
+      <span class="checkmarkBRO">ESSENTIALS</span>
+    </label>
+    <label class="container1 boo3">
+      <input type="checkbox">
+      <span class="checkmarkBRO">BEAUTY/HEALTH</span>
+    </label>
+    <label class="container1 boo3">
+      <input type="checkbox">
+      <span class="checkmarkBRO">PUBLIC SPACES</span>
+    </label>
+  </div>
+
+  <div class="insanity">
+    <div class="starz">
+      <div class="eee">
+        <form action="/action_page.php">
+          <label class="container">
+            <input type="checkbox">
+            <span class="checkmark">5 STARS</span>
+          </label>
+          <div class="5starz">
+            <span class="glyphicon glyphicon-star checked"></span>
+            <span class="glyphicon glyphicon-star checked"></span>
+            <span class="glyphicon glyphicon-star checked"></span>
+            <span class="glyphicon glyphicon-star checked"></span>
+            <span class="glyphicon glyphicon-star checked"></span>
+          </div>
+          <br><br>
+          <label class="container">
+            <input type="checkbox">
+            <span class="checkmark">4 STARS</span>
+          </label>
+          <div class="4starz">
+            <span class="glyphicon glyphicon-star checked"></span>
+            <span class="glyphicon glyphicon-star checked"></span>
+            <span class="glyphicon glyphicon-star checked"></span>
+            <span class="glyphicon glyphicon-star checked"></span>
+            <span class="glyphicon glyphicon-star-empty checked"></span>
+
+          </div>
+          <br><br>
+          <label class="container">
+            <input type="checkbox">
+            <span class="checkmark">3 STARS</span>
+          </label>
+          <div class="3starz">
+            <span class="glyphicon glyphicon-star checked"></span>
+            <span class="glyphicon glyphicon-star checked"></span>
+            <span class="glyphicon glyphicon-star checked"></span>
+            <span class="glyphicon glyphicon-star-empty checked"></span>
+            <span class="glyphicon glyphicon-star-empty checked"></span>
+
+          </div>
+          <br><br>
+          <label class="container">
+            <input type="checkbox">
+            <span class="checkmark">2 STARS</span>
+          </label>
+          <div class="2starz">
+            <span class="glyphicon glyphicon-star checked"></span>
+            <span class="glyphicon glyphicon-star checked"></span>
+            <span class="glyphicon glyphicon-star-empty checked"></span>
+            <span class="glyphicon glyphicon-star-empty checked"></span>
+            <span class="glyphicon glyphicon-star-empty checked"></span>
+
+          </div>
+          <br><br>
+          <label class="container">
+            <input type="checkbox">
+            <span class="checkmark">1 STAR</span>
+          </label>
+          <div class="1starz">
+            <span class="glyphicon glyphicon-star checked"></span>
+            <span class="glyphicon glyphicon-star-empty checked"></span>
+            <span class="glyphicon glyphicon-star-empty checked"></span>
+            <span class="glyphicon glyphicon-star-empty checked"></span>
+            <span class="glyphicon glyphicon-star-empty checked"></span>
+
+          </div>
+          <!--       <input type="submit" value="Submit"> -->
+        </form>
+      </div>
+    </div>
+    <br>
+
+
+
+    <div class="card-container">
+      <div class="card-1">
+        <div class="card-image-1">
+          <img
+            src="https://media.istockphoto.com/photos/fresh-cakes-picture-id497959594?k=20&m=497959594&s=612x612&w=0&h=Pzq7lXr-_J2p9aNEio4QrV3pquWUr4TIAu3yRMqeV_E="
+            alt="">
+        </div>
+        <div class="card-text-1">
+          <h3>Balie's Bakery</h3>
+          <div class="rating">
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+          </div>
+          <div class="btn">
+            <a href="bb.html">
+              <button type="button">Read more</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card-1">
+        <div class="card-image-1">
+          <img src="https://techcrunch.com/wp-content/uploads/2016/01/a-real-bookstore.jpg" alt="">
+        </div>
+        <div class="card-text-1">
+          <h3>RavenQuill</h3>
+          <div class="rating">
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+          </div>
+          <div class="btn">
+            <a href="bb.html">
+              <button type="button">Read more</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card-1">
+        <div class="card-image-1">
+          <img
+            src="https://media.npr.org/assets/img/2020/05/05/plazamarqueeduringclosure_custom-965476b67c1a760bdb3e16991ce8d65098605f62-s1100-c50.jpeg"
+            alt="">
+        </div>
+        <div class="card-text-1">
+          <h3>Filmix</h3>
+          <div class="rating">
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+          </div>
+          <div class="btn">
+            <a href="bb.html">
+              <button type="button">Read more</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card-1">
+        <div class="card-image-1">
+          <img
+            src="https://img.freepik.com/premium-photo/interior-men-s-clothing-store-style-fashion_120897-3074.jpg?w=2000"
+            alt="">
+        </div>
+        <div class="card-text-1">
+          <h3>Apparee</h3>
+          <div class="rating">
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+          </div>
+          <div class="btn">
+            <a href="bb.html">
+              <button type="button">Read more</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card-1">
+        <div class="card-image-1">
+          <img
+            src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3JvY2VyeSUyMHN0b3JlJTIwYWlzbGV8ZW58MHx8MHx8&w=1000&q=80"
+            alt="">
+        </div>
+        <div class="card-text-1">
+          <h3>GoTo Grocery</h3>
+          <div class="rating">
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+          </div>
+          <div class="btn">
+            <a href="bb.html">
+              <button type="button">Read more</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card-1">
+        <div class="card-image-1">
+          <img src="https://media-cdn.tripadvisor.com/media/photo-s/17/0c/ba/4d/one-of-the-bakery-cases.jpg" alt="">
+        </div>
+        <div class="card-text-1">
+          <h3>Pastre</h3>
+          <div class="rating">
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+            <i class="glyphicon glyphicon-star checked"></i>
+          </div>
+          <div class="btn">
+            <a href="bb.html">
+              <button type="button">Read more</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mastercard">
+      <div class="card-container">
+        <div class="card-1">
+          <div class="card-image-1">
+            <img src="https://866attylaw.com/wp-content/uploads/2020/07/adaptive-clothing-make-life-easier-disabled.jpg"
+              alt="">
+          </div>
+          <div class="card-text-1">
+            <h3>Outdo</h3>
+            <div class="rating">
+              <i class="glyphicon glyphicon-star checked"></i>
+              <i class="glyphicon glyphicon-star checked"></i>
+              <i class="glyphicon glyphicon-star checked"></i>
+              <i class="glyphicon glyphicon-star checked"></i>
+              <i class="glyphicon glyphicon-star-empty checked
+                "></i>
+            </div>
+            <div class="btn">
+              <a href="bb.html">
+                <button type="button">Read more</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card-1">
+          <div class="card-image-1">
+            <img
+              src="https://cdn.vox-cdn.com/thumbor/p3GjD-7suCuZWD7nH6ZUoWACP_g=/0x0:9467x6311/1200x800/filters:focal(3977x2399:5491x3913)/cdn.vox-cdn.com/uploads/chorus_image/image/69323734/Side_Piece_2___Anthony_Mair.0.jpg"
+              alt="">
+          </div>
+          <div class="card-text-1">
+            <h3>Pizza Maniac</h3>
+            <div class="rating">
+              <i class="glyphicon glyphicon-star checked"></i>
+              <i class="glyphicon glyphicon-star checked"></i>
+              <i class="glyphicon glyphicon-star checked"></i>
+              <i class="glyphicon glyphicon-star checked"></i>
+              <i class="glyphicon glyphicon-star-empty checked"></i>
+            </div>
+            <div class="btn">
+              <a href="bb.html">
+                <button type="button">Read more</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card-1">
+          <div class="card-image-1">
+            <img src="https://www.dudleynews.co.uk/resources/images/5550574?type=responsive-gallery-fullscreen" alt="">
+          </div>
+          <div class="card-text-1">
+            <h3>GYMethod</h3>
+            <div class="rating">
+              <i class="glyphicon glyphicon-star checked"></i>
+              <i class="glyphicon glyphicon-star checked"></i>
+              <i class="glyphicon glyphicon-star checked"></i>
+              <i class="glyphicon glyphicon-star checked"></i>
+              <i class="glyphicon glyphicon-star-empty checked"></i>
+            </div>
+            <div class="btn">
+              <a href="bb.html">
+                <button type="button">Read more</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-container">
+        <div class="card-1">
+          <div class="card-image-1">
+            <img src="https://manhattanbarbershopnyc.com/wp-content/uploads/2021/10/IMG_0282-scaled.jpg" alt="">
+          </div>
+          <div class="card-text-1">
+            <h3>Ruben's Hair</h3>
+            <div class="rating">
+              <i class="glyphicon glyphicon-star checked"></i>
+              <i class="glyphicon glyphicon-star checked"></i>
+              <i class="glyphicon glyphicon-star checked"></i>
+              <i class="glyphicon glyphicon-star checked"></i>
+              <i class="glyphicon glyphicon-star-empty checked"></i>
+            </div>
+            <div class="btn">
+              <a href="bb.html">
+                <button type="button">Read more</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--   <div class="cardd">
+    <img src="https://media.istockphoto.com/photos/fresh-cakes-picture-id497959594?k=20&m=497959594&s=612x612&w=0&h=Pzq7lXr-_J2p9aNEio4QrV3pquWUr4TIAu3yRMqeV_E=" alt="" class="carddimg">
+    <div class="contento">
+      <p class="title"><b>Balie's Bakery</b></p>
+      <div class="rating">
+        <i class="fas fa-star checked"></i>
+        <i class="fas fa-star checked"></i>
+        <i class="fas fa-star checked"></i>
+        <i class="fas fa-star checked"></i>
+        <i class="fas fa-star checked"></i>
+      </div>
+      <br>
+      <div class="btn">
+        <a href="bb.html">
+          <button type="button">Read more</button>
+        </a>
+      </div>
+    </div>
+  </div> -->
+
+
+  <br>
+
+
+</body>
+
+</html>

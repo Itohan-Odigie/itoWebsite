@@ -1,0 +1,470 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap');
+
+body {
+  background-color:#b2e0df;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+#navbar {
+    position: fixed;
+    /*making it so my navbar is always up there no matter where you scroll*/
+    top: 0%;
+    /*making it so my navbar is at the top*/
+    width: 100%;
+    /*making it so the navbar goes from one end to the other*/
+    background-size: 100%;
+    /*making it so my background is 100% of the og image*/
+    margin:0%;
+    z-index: 20;
+    background-color: #6FB3B8;
+}
+
+#navbar ul {  
+    margin-left: 1px;
+    list-style-type: none; 
+    text-align: center; 
+} 
+
+#navbar ul li {
+    float:right;
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px; /*puts space in between the words */
+    padding-top: 20px;
+    /* top right bottom left */
+    
+} 
+ 
+#navbar ul li a { 
+    text-decoration: none; 
+    font-size: 25px;
+    color: white; 
+    background-color: transparent; 
+} 
+
+#navbar ul li a:hover   { 
+    border: 3px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 24px;
+    background: none;
+    color: white;
+    transition: all 0.4s ease;
+    box-shadow: rgba(43, 32, 129, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+} 
+
+#navbar a.logo{
+    color: rgba(0, 0, 0, 0);
+    /*making the text invisible bc i only want the logo not text*/
+    background-image: url("images/AscentYTSmall.png");
+    background-size: 100%;
+    /*adjusts the image size so logo will appear*/
+    background-repeat: no-repeat;
+    /*makes it so the logo doesn't repeat*/
+    position: relative;
+    left: -23px;
+    padding: 0px 60px 50px 0px;
+    float: left;
+}
+
+i{
+    margin-right: 8px;
+    /*puts space between the icons and the words in nav bar */
+}
+
+.menu{
+    margin: 0%;
+}
+
+
+/*---ANIMATIONS---*/
+
+#home:hover .fa-home{
+    animation: jump-shaking 1s ease-in infinite; 
+}
+
+@keyframes horizontal-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(1px) }
+    50% { transform: translateX(-1px) }
+    75% { transform: translateX(1px) }
+    100% { transform: translateX(0) }
+}
+      
+#file:hover .fa-file-text{
+    animation: jump-shaking 1s ease-in infinite; 
+}
+
+@keyframes jump-shaking {
+    0% { transform: translateX(0) }
+    25% { transform: translateY(-4px) }
+    35% { transform: translateY(-4px) rotate(17deg) }
+    55% { transform: translateY(-4px) rotate(-17deg) }
+    65% { transform: translateY(-4px) rotate(17deg) }
+    75% { transform: translateY(-4px) rotate(-17deg) }
+    100% { transform: translateY(0) rotate(0) }
+} 
+      
+#arrow:hover .fa-arrow-circle-right{
+    animation: moveright 1s ease-in infinite; 
+}
+
+@keyframes moveright {
+    0% {transform: translateX(-4px); opacity: 1;}
+    100% {transform: translateX(8px);opacity: 0;}
+}
+
+#phone:hover .fa-phone{
+    animation: skew-y-shakeing 1s ease-in infinite;
+}
+    
+@keyframes skew-y-shakeing{
+    0% { transform: skewY(-15deg); }
+    5% { transform: skewY(15deg); }
+    10% { transform: skewY(-15deg); }
+    15% { transform: skewY(15deg); }
+    20% { transform: skewY(0deg); }
+    100% { transform: skewY(0deg); }
+}
+
+
+#pencil:hover .fa-pencil{
+    animation: tilt-shaking 0.25s infinite;
+}
+
+@keyframes tilt-shaking {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0eg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/*RECS*/
+.media-scroller {
+  /* locally scoped property */
+    --spacer: 1rem;
+    /* we use grid to control everything on parent */
+    display: grid;
+    gap: var(--spacer);
+    /* every element in media has converted into column instead of row */
+    grid-auto-flow: column;
+    grid-auto-columns: 20%;
+
+    padding: 0 var(--spacer) var(--spacer);
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.media-scroller--with-groups {
+  grid-auto-columns: 100%;
+}
+
+.media-group {
+  display: grid;
+  gap: var(--_spacer);
+  grid-auto-flow: column;
+}
+
+/* let's keep our pictures consistent! */
+.media-element {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--spacer);
+  padding: var(--spacer);
+  background: var(--surface-2);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-3);
+  background-color: #194448;
+}
+
+.media-element > img {
+  aspect-ratio: 16 / 9;
+  inline-size: 100%;
+  object-fit: cover;
+
+}
+
+.media-ele {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: var(--spacer);
+  padding: var(--spacer);
+  background: var(--surface-2);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-3);
+  background-color: #194448;
+}
+
+.media-ele > img {
+  inline-size: 100%;
+  object-fit: cover;
+
+}
+
+.snaps-inline {
+  scroll-snap-type: inline mandatory;
+  scroll-padding-inline: var(--_spacer, 1rem);
+}
+
+.snaps-inline > * {
+  scroll-snap-align: start;
+}
+
+/* general styling */
+
+.container {
+/*   inline-size: min(100% - 4rem, 70rem); */
+/*   margin-inline: auto; */
+  width:fit-content;
+  height:fit-content;
+}
+
+.flow {
+  display: grid;
+  gap: var(--size-3);
+}
+
+.page-header {
+  padding-block: var(--size-9);
+  margin-block-end: var(--size-9);
+  background: var(--gradient-16);
+  color: var(--gray-0);
+  box-shadow: var(--shadow-2);
+}
+
+.page-title {
+  font-size: var(--font-size-fluid-3);
+}
+
+.page-subtitle {
+  font-size: var(--font-size-fluid-1);
+}
+
+.section-title {
+  padding-inline-start: var(--size-6);
+  margin-block: var(--size-9) var(--size-3);
+}
+
+.btn {
+  padding: 0px;
+}
+
+.btn button {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #6FB3B8;
+  border-radius: 20px;
+  border: 3px solid #6FB3B8;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.btn button:hover{
+    background: #a7a0a0;
+  color: white;
+  border: 3px solid #a7a0a0 ;
+}
+
+input[type=checkbox] {
+  width:23px; 
+  height:23px;
+}
+
+.checked {
+  color:white;
+  font-size: 40px;
+}
+
+.starz {
+  border: 3px solid white;
+  width: 300px;
+/*   text-align: center;
+  align-items: center; */
+  float: left;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+/*   vertical-align: middle; */
+/*   bottom: -40em; */
+}
+
+.bruh {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid white;
+/*   width: 93%; */
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 5px;
+/*   display: flex;
+  justify-content: space-between; */
+}
+
+.bxone {
+  margin-left: 15px;
+/*   border: 3px solid red; */
+  width:fit-content;
+  height:fit-content;
+}
+
+.bxtwo {
+/*   border: 3px solid red; */
+  width:fit-content;
+  height:fit-content;
+}
+
+.bxtree {
+/*   border: 3px solid red; */
+  width:fit-content;
+  height:fit-content;
+}
+
+.bxfou {
+/*   border: 3px solid red; */
+  width:fit-content;
+  height:fit-content;
+  margin-right: 15px;
+}
+
+.checkmarkBRO {
+  width:fit-content;
+  height:fit-content;
+  font-size: 25px;
+}
+
+.bro {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid white;
+/*   width: 93%; */
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+label {
+  font-size: 30px;
+  align-items: center;
+  color: white;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+.insanity {
+  align-items: inline;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* .boo1 {
+  width: 340px;
+  float: left;
+  margin-left: 15px;
+}
+
+.boo2 {
+  width: 245px;
+}
+
+.boo3 {
+  width: 275px;
+}
+
+.boo4 {
+  width: 295px;
+  margin-right: 15px;
+  float: right;
+} */
+
+checkbox {
+  color: white;
+}
+
+.container1 {
+ 
+}
+
+.rowone {
+  
+}
+
+/* .cardd { */
+/*   width:fit-content;
+  height:fit-content; */
+/*   background-color: white;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-left: 335px;
+  margin-right: 50px;
+  display-items: inline;
+}
+
+.carrd:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.carddimg {
+  object-fit:cover;
+  max-width:100%;
+  max-height:100%;
+} */
+
+/* .contento {
+  width: 330px;
+  max-height:100%;
+} */
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+/*   border: 1px solid green; */
+  margin-left: 335px;
+
+}
+
+.card-1 {
+  display: flex;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-bottom: 30px;
+}
+
+.card-1:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+.card-image-1 {
+  width: 30%;
+/*   border: 1px solid blue; */
+}
+
+.card-image-1 img {
+  width: 100%;
+  min-height: 100%;
+}
+
+.card-text-1 {
+  width: 70%;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.checked {
+  color: orange;
+}

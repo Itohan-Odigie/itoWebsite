@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap');
+
+body{
+    margin: 0; 
+	padding: 0;
+    
+}
+
+/* CONTACT SECTION STYLING */
+.contact{
+    background-color: #b2e0df;
+    height: 100vh;
+    /* CENTERING THE NAME, EMAIL AND MSG INPUT IN THE MIDDLE */
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+.contact .title{ /*'Contact Me'*/
+    font-family: "Rancho", cursive;
+    font-size: 67px;
+    color: #6FB3B8;
+    text-shadow: 3.4px 2px #fff;
+    letter-spacing: 2px;
+    margin-left: 15%;
+}
+
+/* "let me know" text */
+.contact .title .word{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Nova Mono', monospace;
+    margin-bottom: -25px;
+    margin-top: 15px;
+    text-shadow: 1px 2px rgb(255, 255, 255);
+}
+
+
+
+/* NAME AND EMAIL SPECIFICALLY */
+.contact .right form .fields{
+    display: flex; /*put the name & email next to each other*/
+}
+/* Space b/w name input and email input */
+.contact .right form .name{
+    margin-right: 40px;
+}
+
+
+/* height and weight for NAME AND EMAIL (and msg)*/
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+
+/* NOTE: input field directly of the name, email adn msg input */
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 2px solid #6FB3B8;
+    border-radius: 600px;
+    outline: none;
+    padding: 0 15px; /*means space INSIDE the input placeholder*/
+    font-size: 17px;
+    /* font-family: 'Poppins', sans-serif; */
+    transition: all 0.3s ease;
+}
+
+.contact .right form .field input:focus, /*INSTEAD OF HOVER WE CAN DO "FOCUS*/
+.contact .right form .textarea textarea:focus{
+    border-color: #ffffff;
+}
+
+/* TALKS SPECIFICALLY ABOUT THE MSG INPUT */
+/* height and weight for text area */
+.contact .right form .textarea{
+    height: 124px;
+    width: 100%;
+    border-radius: 100px;
+}
+
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none; /*dis allows the user to not resize the textarea*/
+    border-radius: 13px;
+  }
+
+
+  /* BUTTON */
+.contact .right form .button-area{
+/* YOU NEED THIS FOR BUTTON CENTERING TOO */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contact .right form .button-area button{
+    text-align: center;
+    width: 120px;
+    padding: 5px 0px 8px 2px;
+    border-radius: 80px;
+    border-color: transparent;
+    color: #fffefb;
+    cursor: pointer;
+    background: #6FB3B8;
+    border: 3px solid rgb(255, 255, 255);
+    font-family: "Rancho", cursive;
+    font-size: 22px;
+    font-weight: 500;
+    transition: all 0.4s ease;
+    margin: 0 auto; /*IMPORTANT: THIS IS HOW U CENTER THE "SEND BUTTON"*/
+}
+
+
+.right form .button-area button:hover{
+  color: #ffffff;
+  background: #d0d5da;
+}
+
+
+
+
+/* --------------NAVBAR SECTION --------------- */
+#navbar {
+    /* overflow: hidden; */
+    position: fixed;
+    /*making it so my navbar is always up there no matter where you scroll*/
+    top: 0%;
+    /*making it so my navbar is at the top*/
+    width: 100%;
+    /*making it so the navbar goes from one end to the other*/
+    background-color: #6FB3B8;
+    /*just a precaution if the image doesn't show*/
+    background-size: 100%;
+    /*making it so my background is 100% of the og image*/
+    margin:0%;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#navbar ul { 
+    margin-left: 1px;
+    margin-top: 4px;
+  font-family: 'Josefin Sans', sans-serif;
+	} 
+
+#navbar ul li { 
+    float: right; 
+    list-style-type: none;
+    display: inline-block; /* IMPORTANT! IT PUTS THE NAV WORDS SIDE BY SIDE */
+	padding: 15px; /* puts space in between the words */
+  font-family: 'Josefin Sans', sans-serif;
+} 
+ 
+    /* NAV BAR WORDS */
+#navbar ul li a { 
+    font-family: 'Katibeh', cursive;
+	text-decoration: none; 
+    font-size: 26px;
+	color: white; 
+	background-color: transparent; 
+  font-family: 'Josefin Sans', sans-serif;
+	} 
+ 
+#navbar ul li a:hover { 
+    border: 3px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    padding-bottom: 11px;
+    padding-top: 8px;
+    font-size: 23px;
+    background: none;
+    color: white;
+    transition: all 0.4s ease;
+    box-shadow: rgba(119, 116, 129, 0.795) 0 1px 30px;
+    transition-duration: .1s;
+	} 
+
+    /* ------------IMAGE LOGO (in navbar)----------------- */
+    /* do a similar technique like naomi, 1)put a random word as a placeholder (MUST BE IN DIV)
+    2) replace the word with an image
+    3) make the word transparent */
+    #navbar a.logo{
+        color: transparent; /*making the text invisible bc i only want the logo not text*/
+        background-image: url("img/Ascent.png");
+        background-size: 120%; /*adjusts the image size so logo will appear*/
+        background-repeat: no-repeat; /*makes it so the logo doesn't repeat*/
+        position: relative;
+        top: -8px;
+        left: -23px;
+        padding: 0px 60px 50px 0px;
+        font-size: 8px;
+        }
+    
+
+    /* ------------ICONS------------- */
+    i{
+        margin-right: 8px;
+        /* puts space between the icons and the words in nav bar */
+    }
+
+    /* --------- ANIMATION FOR ICONS-------- */
+    #home-logo:hover .fa-home{
+        animation: jump-shaking 1s ease-in infinite;
+    }
+     
+    @keyframes horizontal-shaking {
+        0% { transform: translateX(0) }
+        25% { transform: translateX(10px) }
+        50% { transform: translateX(-2px) }
+        75% { transform: translateX(6px) }
+        100% { transform: translateX(0) }
+    }
+         
+    #file:hover .fa-file-text{
+        animation: jump-shaking 1s ease-in infinite;
+    }
+     
+    @keyframes jump-shaking {
+        0% { transform: translateX(0) }
+        25% { transform: translateY(-4px) }
+        35% { transform: translateY(-4px) rotate(17deg) }
+        55% { transform: translateY(-4px) rotate(-17deg) }
+        65% { transform: translateY(-4px) rotate(17deg) }
+        75% { transform: translateY(-4px) rotate(-17deg) }
+        100% { transform: translateY(0) rotate(0) }
+    }
+         
+    #arrow:hover .fa-arrow-circle-right{
+        animation: moveright 1s ease-in infinite;
+    }
+     
+    @keyframes moveright {
+        0% {transform: translateX(-4px); opacity: 1;}
+        100% {transform: translateX(8px);opacity: 0;}
+    }
+         
+    #pencil:hover .fa-pencil{
+        animation: tilt-shaking 0.25s infinite;
+    }
+     
+    @keyframes tilt-shaking {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(5deg); }
+        50% { transform: rotate(0eg); }
+        75% { transform: rotate(-10deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    #phone:hover .fa-phone{
+        animation: skew-y-shakeing 1s ease-in infinite;
+    }
+       
+    @keyframes skew-y-shakeing{
+        0% { transform: skewY(-15deg); }
+        5% { transform: skewY(15deg); }
+        10% { transform: skewY(-15deg); }
+        15% { transform: skewY(15deg); }
+        20% { transform: skewY(0deg); }
+        100% { transform: skewY(0deg); }
+    }

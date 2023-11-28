@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <!-- with the help of js i was able to deisgn an app to tell users of the weatehr of the city of their choice-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="weather.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Weather App </title>
+</head>
+<!-- <header>
+      <input type="text" autocomplete="off" id="search-box" placeholder="Search for a city..." />
+    </header>-->
+<body>
+    <form id="search-form">
+        <input type="text"
+        placeholder="Enter City Name"
+        id="search-input"
+        required
+        autocomplete="off"
+        />
+        <br>
+    </br>
+    <button id="search-button"> Search </button><!-- basically this line SHOW YOU HOW TO MAKE BUTTONS-->
+    </form>
+
+    <main id="app-container">
+        <div id="location">
+            <p>-------</p>
+        </div>
+            <div id="temp">
+                <img id="temp-icon" src="./images/sun.svg" alt="">
+                <p><span id="temp-value">-----</span> <span id="temp-unit" >&#176c</span> </p>
+            </div>
+
+            <div id="climate">
+                <p>------</p>
+            </div>
+    </main>
+
+<script src="weather.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Festive&family=Handlee&display=swap');
+
+*{ /* NOTE: I this (*) applies to the entire doc */
+    padding: 0;
+    margin: 0;
+    margin-top: -1.2%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*body (entire thing inside body) */
+body{
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+/* Header 6 */
+#h6{
+    font-family: 'Handlee', cursive;
+    font-size: 22px;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1%;
+    padding-top: 1.5%;
+}
+
+.food-wrapper{ /* if this mess up, check this*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* the far (heart) hover*/
+.far:hover{
+    color: rgb(0, 0, 0);
+}
+
+/*images*/
+
+img{
+    width: 100%;
+    display: block;
+}
+
+ /*this applies to the things inside food wrapper*/
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* food wrapper */
+.food-wrapper{
+    min-height: 100vh;
+    flex-direction: column;
+    background: #f9f9f9;
+    padding: 3rem;
+}
+
+/* food wrapper header(H) 1*/
+.food-wrapper h1{
+    text-transform: uppercase;
+    margin: 1rem 0 2rem 0;
+    letter-spacing: 2px; /* NOTE: this helps with the spacing of the letters*/
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    text-shadow:  2px 3px 1px #c3c9bf;
+    opacity: 0.8; /*NOTE: IF ITS TOO "DARK" USE OPACITY*/
+}
+
+/* NOTE this is for the underline thing after "cake order card"*/
+
+.food-wrapper h1::after{ /*im guessing the after means, give it an underline after*/
+    position: absolute; /*dis prevents it from moving when we scroll*/
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    content: ""; 
+    /*this determines its height and width*/
+    height: 4px;
+    width: 126px;
+    background: #d8d8eb; /* dis determines its colour*/
+}
+
+/* everything inside the food class*/
+.foods{
+    display: grid; /*dis sets the display in a grid*/
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); /*if u display grid, make sure u write this*/
+    column-gap: 3rem; /*b/c its a grid, & gird have coloums we can style them by columns*/
+}
+
+.food{
+    background: #fff;
+    box-shadow: 0 0 17px 0 rgba(194, 174, 202, 0.64);
+    margin: 2rem 0;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
+.food-img img{ /*  NOTE: again we defined the class and what in the class we want to style*/
+    border-radius: 7px 7px 0 0;
+    -webkit-border-radius: 7px 7px 0 0;
+    -moz-border-radius: 7px 7px 0 0;
+    -ms-border-radius: 7px 7px 0 0;
+    -o-border-radius: 7px 7px 0 0;
+}
+.food-img{
+    position: relative;
+}
+/* the good image span is the fas-fa heart aka the heart thing*/
+/* NOTE: we first defined the class name and them d span meaning we want */
+.food-img span{
+    position: absolute;
+    font-size: 2rem;
+    color: #fff;
+    top: 1rem; /*dis is what tells us it goes to the top*/
+    right: 1.8rem;
+}
+.food-rate{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    background: #bdbddf;
+    border-radius: 10px;
+    margin: 4px;
+    padding: 0.4rem 1.5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.food-rate:hover{
+    background-color: rgb(240, 240, 222);
+    color: #000000;
+}
+
+.fa{
+    color: #000000;
+    cursor: pointer;
+}
+
+.fa:hover{
+    color: #bdbddf;
+}
+
+.food-content{
+    padding: 1.6rem;
+}
+.food-content p{
+    padding: 1.2rem 0;
+}
+.food-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.food-info div{
+    display: flex;
+    align-items: center;
+    color: #000000; /*CHANGE*/
+}
+.food-info div p{
+    padding-left: 0.4rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.food-info span{ /* this is the cream icing part*/
+    background: #bdbddf;
+    color: #fff;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 0.1rem 0.8rem;
+    font-weight: 600;
+}
+.food-price-calc{
+    padding: 1.2rem 0 0.6rem 0;
+    display: flex;
+    justify-content: space-between; /*dis puts space in b/w the elements*/
+}
+.food-price-calc h2{
+    color: #000000;
+    font-size: 2rem;
+}
+.food-quantity{
+    display: flex;
+    align-items: center;
+}
+.food-quantity div{
+    width: 45px;
+    height: 45px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.35rem;
+}
+.order-val{
+    font-weight: 600;
+    background: #f9f9f9;
+}
+
+html{
+    background: #f9f9f9; 
+}
+
+.order-dec,
+.order-inc{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.45);
+}
+.order-dec .fas,
+.order-inc .fas{
+    color: #fff;
+}
+/*This is how u add a hover to 2 diff things*/
+.order-dec:hover,
+.order-inc:hover{
+        background-color: rgb(0, 0, 0);  
+}
+
+/* purchase button */
+#buy{
+    font-family: 'Handlee', cursive;;
+    background-color: #bdbddf;
+    border: none;
+    border-radius: 30px;
+    font-size: 24px;
+    padding: 10px; 
+    padding-left: 2%; 
+    padding-right: 2%; 
+}
+
+#buy:hover{
+    background: #F0E68C;
+    border-radius: 20px;
+  padding: 10px 15px;
+  color: #000;
+  font-weight: bold;
+  background: #66ff66;
+  background: -moz-linear-gradient(top,  #F0E68C 0%, #FFD700 70%, #F0E68C 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F0E68C), color-stop(70%,#aaffaa), color-stop(100%,#66ff66));
+  background: -webkit-linear-gradient(top,  #F0E68C 0%,#F0E68C 70%,#F0E68C 100%);
+  background: -o-linear-gradient(top,  #F0E68C 0%,#FFD700 70%,#F0E68C 100%);
+  background: -ms-linear-gradient(top,  #F0E68C 0%,#FFD700 70%,#F0E68C 100%);
+  background: linear-gradient(to bottom,  #F0E68C 0%,#F0E68C 70%,#F0E68C 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F0E68C', endColorstr='#F0E68C',GradientType=0 ); 
+}
+
+
+#buy:hover{
+    color: rgb(0, 0, 0);
+    box-shadow: 0 5px 15px #d8cd8c;
+    background-color: #dbdbf0;
+    opacity: 0.9;
+    cursor: pointer;
+    font-weight: 600;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 26px;
+}
+
+
+
+
+
+a{
+    display: flex;
+    display: inline; /*NOTE: it is important for link to be displayed as inline b/c if they dont, they will display as block meaning (THE ENTIRE WIDTH of that element will be clickable*/
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* shopping cart and intext purchase button*/
+#paying{
+    color: rgb(253, 253, 253);
+}
+
+.buying{
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(145, 92, 182);
+  padding: 15px 40px;
+  transition: all 0.2s ease-in-out;
+}
+
+.buying:hover{
+    background: #F0E68C;
+    border-radius: 20px;
+  padding: 10px 15px;
+  color: #000;
+  font-weight: bold;
+  background: #66ff66;
+  background: -moz-linear-gradient(top,  #F0E68C 0%, #FFD700 70%, #F0E68C 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F0E68C), color-stop(70%,#aaffaa), color-stop(100%,#66ff66));
+  background: -webkit-linear-gradient(top,  #F0E68C 0%,#F0E68C 70%,#F0E68C 100%);
+  background: -o-linear-gradient(top,  #F0E68C 0%,#FFD700 70%,#F0E68C 100%);
+  background: -ms-linear-gradient(top,  #F0E68C 0%,#FFD700 70%,#F0E68C 100%);
+  background: linear-gradient(to bottom,  #F0E68C 0%,#F0E68C 70%,#F0E68C 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F0E68C', endColorstr='#F0E68C',GradientType=0 ); 
+}
+
+/*NOTE: HOW TO MAKE A BUTTON GLOW*/
+.buying:hover{
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 15px #d8cd8c;
+    
+}
+
+
+/*Shopping basket*/
+.fa-shopping-basket{
+    color: #000000;
+    /*text-shadow: 0px 1px 1px#000000;*/
+    opacity: 1;
+    font-size: 20px;
+    padding: 3px;
+}
+
+.fa-shopping-basket:hover{
+    font-size: larger;
+}
+
+/*social medias NOTE: CAN USE FOR FUTURE REFRENCES (look at other doc)*/
+
+.nav-list{ /* note this is the class name*/
+    list-style: none; /*NOTE: THIS STOPS THE ELEMENTS IN NAV BAR FROM WRITING AS LISTS*/
+    width: 100%;
+    height: 100%;
+    /*dis put the icons horixontally instead of vertically*/
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+li{ /* dis put space between the list (the social media icons are in the list thus we are doing it to the parent element which is the li)*/
+    /*NOTE: if something doesn't work for individual elements TRY DOING IT TO THE ENTIRE PARENT ITEM*/
+    margin: 2rem;
+}
+
+
+.socials i{
+    font-size: 32px;
+    color: #acacdd;
+    transition: color 650ms;
+}
+
+
+/*end of social icons that we can use*/
+
+.fa-facebook-square:hover{
+    color: #4267b2;
+    font-size: 40px;
+    transition-duration: 1s;
+}
+
+.fa-twitter-square:hover{
+    color: #07aff1;
+    font-size: 40px;
+    transition-duration: 1s;
+}
+
+.fa-instagram:hover{
+    /*NOTE: YOU CAN USE THIS IN THE FUTURE*/
+    background: linear-gradient(to right,  #fccc63, #fbad50, #e95950, #cd486b, #bc2a8d, #4c68d7);
+    -webkit-background-clip: text; /*if do linear, make sure u include these 2*/
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    transition-duration: 1s;
+}
+
+
+/*footer */
+
+#ppg{
+    font-family: 'Handlee', cursive;
+}
+
+.copyright{
+    /* width and height of border thing*/
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    background-color: #cfcfe7;
+    padding: 1rem;
+    position: relative;
+}
+
+.copyright p{
+    font-size: 1.5rem;
+}

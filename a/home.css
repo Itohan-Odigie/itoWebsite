@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap');
+
+body{
+    margin: 0; 
+	padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* THE TEXT */
+.text h1{
+    /* centers it  */
+    position: absolute;
+    top: 37%;
+    left: 30%;
+    color:white;
+    font-size: 41px;
+    letter-spacing: 2px;
+    font-family: 'Josefin Sans', sans-serif;
+    /* text-shadow: 3.6px 2px lightblue; */
+    }
+
+    
+    /* entire search section */
+.search{
+    margin: 0;
+    padding: 0;
+    background-color: #b2e0df;
+    height: 115vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* search bar specifically */
+.search-container{
+    background: #fff;
+    height: 40px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+  box-shadow: -4px -4px 6px 0 rgb(241, 244, 247), 
+    inset -4px -4px 6px 0 rgba(226, 223, 223, 0.945),
+}
+
+.search-container:hover > .search-input{
+    width: 400px;
+}
+
+.search-container .search-input{
+    background: transparent;
+    border: none;
+    outline:none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+
+}
+
+.search-container .search-btn .fas{
+    color: #6FB3B8;
+    font-size: 20px;
+}
+
+.search-container:hover{
+  animation: linear 0.15s;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #f8f5f5;
+    box-shadow: inset 0 0 5px grey; 
+  border-radius: 13px;
+}
+::-webkit-scrollbar-thumb {
+    background: #a8b7c2fd;
+    opacity: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(112, 107, 107);
+}
+
+
+/* --------------NAVBAR SECTION --------------- */
+
+#navbar {
+    position: fixed;
+    /*making it so my navbar is always up there no matter where you scroll*/
+    top: 0%;
+    /*making it so my navbar is at the top*/
+    width: 100%;
+    /*making it so the navbar goes from one end to the other*/
+    background-size: 100%;
+    /*making it so my background is 100% of the og image*/
+    margin:0%;
+    z-index: 20;
+    background-color: #6FB3B8;
+}
+
+#navbar ul {  
+    margin-left: 1px;
+    list-style-type: none; 
+    text-align: center; 
+} 
+
+#navbar ul li {
+    float:right;
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px; /*puts space in between the words */
+    padding-top: 20px;
+    /* top right bottom left */
+    
+} 
+ 
+#navbar ul li a { 
+    text-decoration: none; 
+    font-size: 25px;
+    color: white; 
+    background-color: transparent; 
+} 
+
+#navbar ul li a:hover   { 
+    border: 3px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 24px;
+    background: none;
+    color: white;
+    transition: all 0.4s ease;
+    box-shadow: rgba(43, 32, 129, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+} 
+
+#navbar a.logo{
+    color: rgba(0, 0, 0, 0);
+    /*making the text invisible bc i only want the logo not text*/
+    background-image: url("images/AscentYTSmall.png");
+    background-size: 100%;
+    /*adjusts the image size so logo will appear*/
+    background-repeat: no-repeat;
+    /*makes it so the logo doesn't repeat*/
+    position: relative;
+    left: -23px;
+    padding: 0px 60px 50px 0px;
+    float: left;
+}
+
+i{
+    margin-right: 8px;
+    /*puts space between the icons and the words in nav bar */
+}
+
+.menu{
+    margin: 0%;
+}
+
+    /* --------- ANIMATION FOR ICONS-------- */
+    #home-logo:hover .fa-home{
+        animation: jump-shaking 1s ease-in infinite;
+    }
+     
+    @keyframes horizontal-shaking {
+        0% { transform: translateX(0) }
+        25% { transform: translateX(10px) }
+        50% { transform: translateX(-2px) }
+        75% { transform: translateX(6px) }
+        100% { transform: translateX(0) }
+    }
+         
+    #file:hover .fa-file-text{
+        animation: jump-shaking 1s ease-in infinite;
+    }
+     
+    @keyframes jump-shaking {
+        0% { transform: translateX(0) }
+        25% { transform: translateY(-4px) }
+        35% { transform: translateY(-4px) rotate(17deg) }
+        55% { transform: translateY(-4px) rotate(-17deg) }
+        65% { transform: translateY(-4px) rotate(17deg) }
+        75% { transform: translateY(-4px) rotate(-17deg) }
+        100% { transform: translateY(0) rotate(0) }
+    }
+         
+    #arrow:hover .fa-arrow-circle-right{
+        animation: moveright 1s ease-in infinite;
+    }
+     
+    @keyframes moveright {
+        0% {transform: translateX(-4px); opacity: 1;}
+        100% {transform: translateX(8px);opacity: 0;}
+    }
+         
+    #pencil:hover .fa-pencil{
+        animation: tilt-shaking 0.25s infinite;
+    }
+     
+    @keyframes tilt-shaking {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(5deg); }
+        50% { transform: rotate(0eg); }
+        75% { transform: rotate(-10deg); }
+        100% { transform: rotate(0deg); }
+    }
+
+    #phone:hover .fa-phone{
+        animation: skew-y-shakeing 1s ease-in infinite;
+    }
+       
+    @keyframes skew-y-shakeing{
+        0% { transform: skewY(-15deg); }
+        5% { transform: skewY(15deg); }
+        10% { transform: skewY(-15deg); }
+        15% { transform: skewY(15deg); }
+        20% { transform: skewY(0deg); }
+        100% { transform: skewY(0deg); }
+    }
+
+    
+    

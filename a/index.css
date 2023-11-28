@@ -1,0 +1,107 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Pathway+Gothic+One&family=Sacramento&family=Source+Code+Pro&family=Varela+Round&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap');
+
+
+html,
+body {
+  /* background-image: url(img/wheelchair.jpg); */
+  overflow-x: initial !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  scroll-behavior: smooth;
+  background-color: #6FB3B8;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+p1{
+    color: white;
+    text-transform: capitalize;
+    padding-left: 348px; /* centers it */
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+  .text-typing p1{
+    width: auto;
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(45, end),
+               blink-caret .75s step-end infinite;
+    
+  }
+
+  
+  @keyframes typing{
+    from {max-width: 0}
+    to {max-width: 100%}
+  }
+  
+  @keyframes blink-caret{
+    from, to {border-color: transparent}
+    50% {border-color: rgb(252, 249, 249)}
+  }
+    
+
+.art{
+    /* centers image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    /* centers image */
+    margin-top: 45px;
+    cursor: pointer; 
+
+}
+
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer; 
+    background: #fdfdfd;
+    color: #6FB3B8;
+    font-size: 19px;
+    padding: 10px 25px 10px 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-weight: 600;
+    border-radius: 35px;
+    border: 3px solid #fdfdfd;
+    margin: 0 auto;
+    font-family: 'Varela Round', sans-serif;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+    border: 3px solid white;
+    font-size: 21px;
+    background: none;
+    color: white;
+    transition: all 0.4s ease;
+    box-shadow: rgba(43, 32, 129, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+}
+
+
+
+
+

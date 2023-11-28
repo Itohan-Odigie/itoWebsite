@@ -1,0 +1,136 @@
+/* important beginning editing */
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Merienda&family=Overlock&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body editing. Meaning EVERYTHING INSIDE THE BODY */
+
+body{
+height: 100px;
+background-color: #adbcda;
+
+}
+
+/* for all the things in the "search form" sectipon */
+#search-form
+{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 100px;
+}
+
+/* for "temp" class. WE USE #FOR "ID"*/
+#temp 
+{
+text-align: center;
+}
+
+#temp #temp-unit /* this is how you style "id" You start with the main id (#temp) and then the sub ids (#temp-unit)- look in html 4 more */
+/* this is talking specifically about the "temp unit" section in the "temp" section*/
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+#temp #temp-value
+/* this is talking specifically about the "temp value" section in the "temp" section */
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+#climate
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+#location
+{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+#temp-icon
+{
+    margin: 1rem;
+    width: 40%;
+    height: auto;    
+}
+
+main{
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #6b778d;
+    border-radius: 20px;
+    width: 360px;
+    height: 360px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 20px 10px rgba(112, 102, 102, 0.2);
+}
+
+#search-button
+{
+    color: #494949;
+    text-transform: capitalize;
+    font-family: 'Overlock', cursive;
+    font-size: large;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 11px;
+    border: 3px solid #7385a8;
+    display: inline-block;
+    transition: all 0.4 ease 0s;
+}
+
+/* INPORTANT INFO RIGHT HERE CAN BE USED FO RFUTRE PURPOSES */
+#search-button:hover{
+    color: #fdfdfd;
+    background: #96a5c2;
+    border-color: #fafafa;
+}
+
+#search-input
+{
+    width: 260px;
+    overflow: hidden;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Overlock', cursive;
+    margin: 8px 0;
+    padding: 8px 8px; /* this means the amount of space till we start typing */
+    border: 3px solid #7385a8;
+    color: rgb(12, 12, 12);
+    outline: none;
+    background: #bfc3ca;
+    /*  max-width: 280px; */
+}
+
+#search-input:hover{
+    border-top: 3px solid;
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-color: #f6f8fd;
+}
+
+input
+{
+    border: none;
+}
+
